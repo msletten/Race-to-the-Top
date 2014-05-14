@@ -13,7 +13,7 @@
 		08159C301922ACCE00DB879A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08159C2E1922ACCE00DB879A /* InfoPlist.strings */; };
 		08159C321922ACCE00DB879A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08159C311922ACCE00DB879A /* main.m */; };
 		08159C361922ACCE00DB879A /* MSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08159C351922ACCE00DB879A /* MSAppDelegate.m */; };
-		08159C391922ACCE00DB879A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08159C371922ACCE00DB879A /* Main.storyboard */; };
+		08159C391922ACCE00DB879A /* Main.iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08159C371922ACCE00DB879A /* Main.iPhone.storyboard */; };
 		08159C3C1922ACCE00DB879A /* MSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08159C3B1922ACCE00DB879A /* MSViewController.m */; };
 		08159C3E1922ACCE00DB879A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08159C3D1922ACCE00DB879A /* Images.xcassets */; };
 		08159C451922ACCE00DB879A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08159C441922ACCE00DB879A /* XCTest.framework */; };
@@ -21,6 +21,11 @@
 		08159C471922ACCE00DB879A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08159C291922ACCE00DB879A /* UIKit.framework */; };
 		08159C4F1922ACCE00DB879A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 08159C4D1922ACCE00DB879A /* InfoPlist.strings */; };
 		08159C511922ACCE00DB879A /* Race_to_the_TopTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08159C501922ACCE00DB879A /* Race_to_the_TopTests.m */; };
+		08159C5C1922AEC600DB879A /* MSSpaceShipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08159C5B1922AEC600DB879A /* MSSpaceShipView.m */; };
+		08159CA41922DBF900DB879A /* Main.iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08159CA31922DBF900DB879A /* Main.iPad.storyboard */; };
+		08159CA6192416C500DB879A /* mount-fuji-and-mount-hoei.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 08159CA5192416C500DB879A /* mount-fuji-and-mount-hoei.jpg */; };
+		08159CA9192417B900DB879A /* MSMountainPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 08159CA8192417B900DB879A /* MSMountainPath.m */; };
+		08159CAC19241A2C00DB879A /* MSPathView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08159CAB19241A2C00DB879A /* MSPathView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +49,7 @@
 		08159C331922ACCE00DB879A /* Race to the Top-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Race to the Top-Prefix.pch"; sourceTree = "<group>"; };
 		08159C341922ACCE00DB879A /* MSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSAppDelegate.h; sourceTree = "<group>"; };
 		08159C351922ACCE00DB879A /* MSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSAppDelegate.m; sourceTree = "<group>"; };
-		08159C381922ACCE00DB879A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08159C381922ACCE00DB879A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.iPhone.storyboard; sourceTree = "<group>"; };
 		08159C3A1922ACCE00DB879A /* MSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MSViewController.h; sourceTree = "<group>"; };
 		08159C3B1922ACCE00DB879A /* MSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MSViewController.m; sourceTree = "<group>"; };
 		08159C3D1922ACCE00DB879A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +58,14 @@
 		08159C4C1922ACCE00DB879A /* Race to the TopTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Race to the TopTests-Info.plist"; sourceTree = "<group>"; };
 		08159C4E1922ACCE00DB879A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		08159C501922ACCE00DB879A /* Race_to_the_TopTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Race_to_the_TopTests.m; sourceTree = "<group>"; };
+		08159C5A1922AEC600DB879A /* MSSpaceShipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSSpaceShipView.h; sourceTree = "<group>"; };
+		08159C5B1922AEC600DB879A /* MSSpaceShipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSSpaceShipView.m; sourceTree = "<group>"; };
+		08159CA31922DBF900DB879A /* Main.iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.iPad.storyboard; sourceTree = "<group>"; };
+		08159CA5192416C500DB879A /* mount-fuji-and-mount-hoei.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "mount-fuji-and-mount-hoei.jpg"; sourceTree = "<group>"; };
+		08159CA7192417B900DB879A /* MSMountainPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMountainPath.h; sourceTree = "<group>"; };
+		08159CA8192417B900DB879A /* MSMountainPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMountainPath.m; sourceTree = "<group>"; };
+		08159CAA19241A2C00DB879A /* MSPathView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPathView.h; sourceTree = "<group>"; };
+		08159CAB19241A2C00DB879A /* MSPathView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPathView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,7 +127,14 @@
 			children = (
 				08159C341922ACCE00DB879A /* MSAppDelegate.h */,
 				08159C351922ACCE00DB879A /* MSAppDelegate.m */,
-				08159C371922ACCE00DB879A /* Main.storyboard */,
+				08159C371922ACCE00DB879A /* Main.iPhone.storyboard */,
+				08159CA31922DBF900DB879A /* Main.iPad.storyboard */,
+				08159CAA19241A2C00DB879A /* MSPathView.h */,
+				08159CAB19241A2C00DB879A /* MSPathView.m */,
+				08159CA7192417B900DB879A /* MSMountainPath.h */,
+				08159CA8192417B900DB879A /* MSMountainPath.m */,
+				08159C5A1922AEC600DB879A /* MSSpaceShipView.h */,
+				08159C5B1922AEC600DB879A /* MSSpaceShipView.m */,
 				08159C3A1922ACCE00DB879A /* MSViewController.h */,
 				08159C3B1922ACCE00DB879A /* MSViewController.m */,
 				08159C3D1922ACCE00DB879A /* Images.xcassets */,
@@ -126,6 +146,7 @@
 		08159C2C1922ACCE00DB879A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				08159CA5192416C500DB879A /* mount-fuji-and-mount-hoei.jpg */,
 				08159C2D1922ACCE00DB879A /* Race to the Top-Info.plist */,
 				08159C2E1922ACCE00DB879A /* InfoPlist.strings */,
 				08159C311922ACCE00DB879A /* main.m */,
@@ -229,9 +250,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08159CA6192416C500DB879A /* mount-fuji-and-mount-hoei.jpg in Resources */,
+				08159CA41922DBF900DB879A /* Main.iPad.storyboard in Resources */,
 				08159C3E1922ACCE00DB879A /* Images.xcassets in Resources */,
 				08159C301922ACCE00DB879A /* InfoPlist.strings in Resources */,
-				08159C391922ACCE00DB879A /* Main.storyboard in Resources */,
+				08159C391922ACCE00DB879A /* Main.iPhone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08159CA9192417B900DB879A /* MSMountainPath.m in Sources */,
 				08159C361922ACCE00DB879A /* MSAppDelegate.m in Sources */,
 				08159C3C1922ACCE00DB879A /* MSViewController.m in Sources */,
 				08159C321922ACCE00DB879A /* main.m in Sources */,
+				08159C5C1922AEC600DB879A /* MSSpaceShipView.m in Sources */,
+				08159CAC19241A2C00DB879A /* MSPathView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +309,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		08159C371922ACCE00DB879A /* Main.storyboard */ = {
+		08159C371922ACCE00DB879A /* Main.iPhone.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				08159C381922ACCE00DB879A /* Base */,
 			);
-			name = Main.storyboard;
+			name = Main.iPhone.storyboard;
 			sourceTree = "<group>";
 		};
 		08159C4D1922ACCE00DB879A /* InfoPlist.strings */ = {
@@ -382,7 +408,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Race to the Top/Race to the Top-Prefix.pch";
 				INFOPLIST_FILE = "Race to the Top/Race to the Top-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -395,7 +423,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Race to the Top/Race to the Top-Prefix.pch";
 				INFOPLIST_FILE = "Race to the Top/Race to the Top-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
