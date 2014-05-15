@@ -46,7 +46,7 @@
     // Drawing code and using the MountainPath files as the drawing data source
     for (UIBezierPath *path in [MSMountainPath mountainPathsForRect:self.bounds])
          {
-             [[UIColor colorWithRed:25/255.0f green:25/255.0f blue:112/255.0f alpha:1/1.0f] setStroke];
+             [[UIColor colorWithRed:184/255.0f green:134/255.0f blue:11/255.0f alpha:1/1.0f] setStroke];
              [path stroke];
          }
 }
