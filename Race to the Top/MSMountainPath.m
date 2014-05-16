@@ -56,8 +56,8 @@
     UIBezierPath *rightMountainPath = [UIBezierPath bezierPath]; // alternative to alloc, init, nested method calls
     UIBezierPath *leftMountainPath = [UIBezierPath bezierPath];
     
-    rightMountainPath.lineWidth = 6.0;
-    leftMountainPath.lineWidth = 4.0;
+    rightMountainPath.lineWidth = 14.0;
+    leftMountainPath.lineWidth = 8.0;
     //using control points we can use the method addQuadCurveToPoint to draw curved lines. Control Points act as an apex toward which a line will curve between two other points. It essentially "pulls" and arc out of the the other two points in a triangle.
     [rightMountainPath moveToPoint:firstPoint];
     [rightMountainPath addLineToPoint:secondPoint];
@@ -83,4 +83,13 @@
     [variousPaths addObject:leftMountainPath];
     return [variousPaths copy];
 }
+
++(UIBezierPath *)tapTargetForPath:(UIBezierPath *)fingerPath;
+{
+    CGPathRef tapTargetPath = CGPathCreateCopyByStrokingPath(fingerPath.CGPath, NULL, fmaxf(10.0f, fingerPath.lineWidth), fingerPath.lineCapStyle, fingerPath.lineJoinStyle, fingerPath.miterLimit);
+    UIBezierPath *tapTarget = [UIBezierPath bezierPathWithCGPath:tapTargetPath];
+    CGPathRelease(tapTargetPath);
+    return tapTarget;
+}
+
 @end

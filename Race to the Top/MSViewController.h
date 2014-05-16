@@ -10,4 +10,5 @@
 
 @interface MSViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *scoreLabel;
 @end

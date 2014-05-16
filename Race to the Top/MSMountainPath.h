@@ -12,4 +12,6 @@
 
 +(NSArray *)mountainPathsForRect:(CGRect)mountainRect;
 
++(UIBezierPath *)tapTargetForPath:(UIBezierPath *)fingerPath;
+
 @end
