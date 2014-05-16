@@ -36,8 +36,8 @@
     
     UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panDetected:)];
     [self.pathView addGestureRecognizer:panRecognizer];
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:MSTIMER_INTERVAL target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
-    
+    //If we keep a timer in viewDidLoad and in the panDetected method, the timer from viewDidLoad will override the timer according to the gesture states. It's important to remove the timer from viewDidLoad in this case so it doesn't just continually run but runs using if/else if statments.
+    //self.timer = [NSTimer scheduledTimerWithTimeInterval:MSTIMER_INTERVAL target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
     self.scoreLabel.text = [NSString stringWithFormat:@"Score: %i", MSMAP_STARTING_SCORE];
 }
 
@@ -51,21 +51,23 @@
 {
     //Using the method locationInView to determine where in the coordinate system the touch is occurring
     CGPoint fingerLocation = [panRecognizer locationInView:self.pathView];
+    //Using if/else if statements we set the timer and score to change only if the a finger is pressing the view within the bounds of the course and according tot he gestureRecognizer state for began, changed, ended or alert the player that the course was not finished with an alertview.
     if (panRecognizer.state == UIGestureRecognizerStateBegan && fingerLocation.y < 750)
     {
-        self.scoreLabel.text = [NSString stringWithFormat:@"Score %i", MSMAP_STARTING_SCORE];
+        //NSTimer is an object that we will use to call a method repeatedly after a set time interval. We create our NSTimer object with a time interval, method, userinfo set to nil and repeats set to YES.
         self.timer = [NSTimer scheduledTimerWithTimeInterval:MSTIMER_INTERVAL target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
+        self.scoreLabel.text = [NSString stringWithFormat:@"Score %i", MSMAP_STARTING_SCORE];
     }
     else if (panRecognizer.state == UIGestureRecognizerStateChanged)
     {
-    for (UIBezierPath *fingerPath in [MSMountainPath mountainPathsForRect:self.pathView.bounds])
-    {
-        UIBezierPath *tapTarget = [MSMountainPath tapTargetForPath:fingerPath];
-        if ([tapTarget containsPoint:fingerLocation])
+        for (UIBezierPath *fingerPath in [MSMountainPath mountainPathsForRect:self.pathView.bounds])
         {
+            UIBezierPath *tapTarget = [MSMountainPath tapTargetForPath:fingerPath];
+            if ([tapTarget containsPoint:fingerLocation])
+            {
             [self decrementScoreByAmount:MSWALL_PENALTY];
+            }
         }
-    }/Users/matsletten/Desktop/Race to the Top
     }
     else if (panRecognizer.state == UIGestureRecognizerStateEnded && fingerLocation.y <= 165)
     {
